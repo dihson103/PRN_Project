@@ -46,52 +46,58 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(37, 24);
+            this.label1.Location = new System.Drawing.Point(60, 38);
+            this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(49, 20);
+            this.label1.Size = new System.Drawing.Size(78, 32);
             this.label1.TabIndex = 0;
             this.label1.Text = "Name";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(37, 71);
+            this.label2.Location = new System.Drawing.Point(60, 114);
+            this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(32, 20);
+            this.label2.Size = new System.Drawing.Size(51, 32);
             this.label2.TabIndex = 1;
             this.label2.Text = "Sex";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(37, 120);
+            this.label3.Location = new System.Drawing.Point(60, 192);
+            this.label3.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(46, 20);
+            this.label3.Size = new System.Drawing.Size(71, 32);
             this.label3.TabIndex = 2;
             this.label3.Text = "Email";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(37, 168);
+            this.label4.Location = new System.Drawing.Point(60, 269);
+            this.label4.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(62, 20);
+            this.label4.Size = new System.Drawing.Size(98, 32);
             this.label4.TabIndex = 3;
             this.label4.Text = "Address";
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(132, 21);
+            this.txtName.Location = new System.Drawing.Point(214, 34);
+            this.txtName.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(268, 27);
+            this.txtName.Size = new System.Drawing.Size(433, 39);
             this.txtName.TabIndex = 4;
             // 
             // rbtnMale
             // 
             this.rbtnMale.AutoSize = true;
-            this.rbtnMale.Location = new System.Drawing.Point(3, 13);
+            this.rbtnMale.Location = new System.Drawing.Point(5, 21);
+            this.rbtnMale.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.rbtnMale.Name = "rbtnMale";
-            this.rbtnMale.Size = new System.Drawing.Size(63, 24);
+            this.rbtnMale.Size = new System.Drawing.Size(98, 36);
             this.rbtnMale.TabIndex = 5;
             this.rbtnMale.TabStop = true;
             this.rbtnMale.Text = "Male";
@@ -100,9 +106,10 @@
             // rbtnFemale
             // 
             this.rbtnFemale.AutoSize = true;
-            this.rbtnFemale.Location = new System.Drawing.Point(131, 13);
+            this.rbtnFemale.Location = new System.Drawing.Point(213, 21);
+            this.rbtnFemale.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.rbtnFemale.Name = "rbtnFemale";
-            this.rbtnFemale.Size = new System.Drawing.Size(78, 24);
+            this.rbtnFemale.Size = new System.Drawing.Size(122, 36);
             this.rbtnFemale.TabIndex = 6;
             this.rbtnFemale.TabStop = true;
             this.rbtnFemale.Text = "Female";
@@ -112,50 +119,55 @@
             // 
             this.panel1.Controls.Add(this.rbtnFemale);
             this.panel1.Controls.Add(this.rbtnMale);
-            this.panel1.Location = new System.Drawing.Point(135, 54);
+            this.panel1.Location = new System.Drawing.Point(219, 86);
+            this.panel1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(224, 46);
+            this.panel1.Size = new System.Drawing.Size(364, 74);
             this.panel1.TabIndex = 7;
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(132, 117);
+            this.txtEmail.Location = new System.Drawing.Point(214, 187);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(268, 27);
+            this.txtEmail.Size = new System.Drawing.Size(433, 39);
             this.txtEmail.TabIndex = 8;
             // 
             // txtAddress
             // 
-            this.txtAddress.Location = new System.Drawing.Point(135, 168);
+            this.txtAddress.Location = new System.Drawing.Point(219, 269);
+            this.txtAddress.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txtAddress.Multiline = true;
             this.txtAddress.Name = "txtAddress";
-            this.txtAddress.Size = new System.Drawing.Size(265, 76);
+            this.txtAddress.Size = new System.Drawing.Size(428, 119);
             this.txtAddress.TabIndex = 9;
             // 
             // btnEdit
             // 
-            this.btnEdit.Location = new System.Drawing.Point(90, 276);
+            this.btnEdit.Location = new System.Drawing.Point(146, 442);
+            this.btnEdit.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(111, 45);
+            this.btnEdit.Size = new System.Drawing.Size(180, 72);
             this.btnEdit.TabIndex = 10;
             this.btnEdit.Text = "Edit";
             this.btnEdit.UseVisualStyleBackColor = true;
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(248, 276);
+            this.btnClose.Location = new System.Drawing.Point(403, 442);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(111, 45);
+            this.btnClose.Size = new System.Drawing.Size(180, 72);
             this.btnClose.TabIndex = 11;
             this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = true;
             // 
             // Profile
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ClientSize = new System.Drawing.Size(438, 358);
+            this.ClientSize = new System.Drawing.Size(740, 599);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.txtAddress);
@@ -166,6 +178,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.Name = "Profile";
             this.Text = "Profile";
             this.panel1.ResumeLayout(false);

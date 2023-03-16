@@ -48,10 +48,11 @@
             this.dataGridViewCheckBoxColumn1});
             this.dgvAttendace.Dock = System.Windows.Forms.DockStyle.Left;
             this.dgvAttendace.Location = new System.Drawing.Point(0, 0);
+            this.dgvAttendace.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.dgvAttendace.Name = "dgvAttendace";
             this.dgvAttendace.RowHeadersWidth = 51;
             this.dgvAttendace.RowTemplate.Height = 29;
-            this.dgvAttendace.Size = new System.Drawing.Size(502, 450);
+            this.dgvAttendace.Size = new System.Drawing.Size(816, 720);
             this.dgvAttendace.TabIndex = 0;
             this.dgvAttendace.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -79,9 +80,10 @@
             // btnSave
             // 
             this.btnSave.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnSave.Location = new System.Drawing.Point(531, 222);
+            this.btnSave.Location = new System.Drawing.Point(863, 355);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(114, 48);
+            this.btnSave.Size = new System.Drawing.Size(185, 77);
             this.btnSave.TabIndex = 1;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
@@ -89,9 +91,10 @@
             // btnClose
             // 
             this.btnClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnClose.Location = new System.Drawing.Point(531, 307);
+            this.btnClose.Location = new System.Drawing.Point(863, 491);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(114, 48);
+            this.btnClose.Size = new System.Drawing.Size(185, 77);
             this.btnClose.TabIndex = 2;
             this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = true;
@@ -99,9 +102,10 @@
             // 
             // btnChoseAll
             // 
-            this.btnChoseAll.Location = new System.Drawing.Point(531, 39);
+            this.btnChoseAll.Location = new System.Drawing.Point(863, 62);
+            this.btnChoseAll.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnChoseAll.Name = "btnChoseAll";
-            this.btnChoseAll.Size = new System.Drawing.Size(114, 48);
+            this.btnChoseAll.Size = new System.Drawing.Size(185, 77);
             this.btnChoseAll.TabIndex = 3;
             this.btnChoseAll.Text = "Chose All";
             this.btnChoseAll.UseVisualStyleBackColor = true;
@@ -109,9 +113,10 @@
             // 
             // btnUnChoseAll
             // 
-            this.btnUnChoseAll.Location = new System.Drawing.Point(531, 129);
+            this.btnUnChoseAll.Location = new System.Drawing.Point(863, 206);
+            this.btnUnChoseAll.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnUnChoseAll.Name = "btnUnChoseAll";
-            this.btnUnChoseAll.Size = new System.Drawing.Size(114, 48);
+            this.btnUnChoseAll.Size = new System.Drawing.Size(185, 77);
             this.btnUnChoseAll.TabIndex = 4;
             this.btnUnChoseAll.Text = "Unchose All";
             this.btnUnChoseAll.UseVisualStyleBackColor = true;
@@ -119,14 +124,15 @@
             // 
             // Attendance
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(669, 450);
+            this.ClientSize = new System.Drawing.Size(1100, 720);
             this.Controls.Add(this.btnUnChoseAll);
             this.Controls.Add(this.btnChoseAll);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.dgvAttendace);
+            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.Name = "Attendance";
             this.Text = "Attendance";
             ((System.ComponentModel.ISupportInitialize)(this.dgvAttendace)).EndInit();
