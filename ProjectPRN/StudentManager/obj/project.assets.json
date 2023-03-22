@@ -2447,9 +2447,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Github\\PRN_Project\\ProjectPRN\\StudentManager\\StudentManager.csproj",
-      "projectName": "StudentManager",
-      "projectPath": "D:\\Github\\PRN_Project\\ProjectPRN\\StudentManager\\StudentManager.csproj",
+      "projectUniqueName": "D:\\Github\\PRN_Project\\ProjectPRN\\StudentManager\\PresentationLayer.csproj",
+      "projectName": "PresentationLayer",
+      "projectPath": "D:\\Github\\PRN_Project\\ProjectPRN\\StudentManager\\PresentationLayer.csproj",
       "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
       "outputPath": "D:\\Github\\PRN_Project\\ProjectPRN\\StudentManager\\obj\\",
       "projectStyle": "PackageReference",
