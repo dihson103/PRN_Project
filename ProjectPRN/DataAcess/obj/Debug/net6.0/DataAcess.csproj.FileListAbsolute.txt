@@ -10,3 +10,17 @@ D:\Vs studio\ProjectPRN\DataAcess\obj\Debug\net6.0\DataAcess.dll
 D:\Vs studio\ProjectPRN\DataAcess\obj\Debug\net6.0\refint\DataAcess.dll
 D:\Vs studio\ProjectPRN\DataAcess\obj\Debug\net6.0\DataAcess.pdb
 D:\Vs studio\ProjectPRN\DataAcess\obj\Debug\net6.0\ref\DataAcess.dll
+D:\Github\PRN_Project\ProjectPRN\DataAcess\bin\Debug\net6.0\DataAcess.deps.json
+D:\Github\PRN_Project\ProjectPRN\DataAcess\bin\Debug\net6.0\DataAcess.dll
+D:\Github\PRN_Project\ProjectPRN\DataAcess\bin\Debug\net6.0\DataAcess.pdb
+D:\Github\PRN_Project\ProjectPRN\DataAcess\obj\Debug\net6.0\DataAcess.csproj.AssemblyReference.cache
+D:\Github\PRN_Project\ProjectPRN\DataAcess\obj\Debug\net6.0\DataAcess.GeneratedMSBuildEditorConfig.editorconfig
+D:\Github\PRN_Project\ProjectPRN\DataAcess\obj\Debug\net6.0\DataAcess.AssemblyInfoInputs.cache
+D:\Github\PRN_Project\ProjectPRN\DataAcess\obj\Debug\net6.0\DataAcess.AssemblyInfo.cs
+D:\Github\PRN_Project\ProjectPRN\DataAcess\obj\Debug\net6.0\DataAcess.csproj.CoreCompileInputs.cache
+D:\Github\PRN_Project\ProjectPRN\DataAcess\obj\Debug\net6.0\DataAcess.dll
+D:\Github\PRN_Project\ProjectPRN\DataAcess\obj\Debug\net6.0\refint\DataAcess.dll
+D:\Github\PRN_Project\ProjectPRN\DataAcess\obj\Debug\net6.0\DataAcess.pdb
+D:\Github\PRN_Project\ProjectPRN\DataAcess\obj\Debug\net6.0\ref\DataAcess.dll
+D:\Github\PRN_Project\ProjectPRN\DataAcess\bin\Debug\net6.0\DataAcess.runtimeconfig.json
+D:\Github\PRN_Project\ProjectPRN\DataAcess\obj\Debug\net6.0\DataAcess.genruntimeconfig.cache

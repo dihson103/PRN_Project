@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lcJxAK5xzkY5pNNbdz4+GORY6t+/Q4gAbRyv6HC0y2JZusBxPO/nfwpC2WKJzHvU71qT57BXNhv2I7UvWl1x/w==",
+  "dgSpecHash": "gN68LGrT0tqd9YN7oLP3jG7do8VwQzZUIDrQv/WbqEnhtCHn82jKg5P09RXic9xXqf5GyLAjs+HN7yLUjcxxzw==",
   "success": true,
-  "projectFilePath": "D:\\Github\\PRN_Project\\ProjectPRN\\StudentManager\\StudentManager.csproj",
+  "projectFilePath": "D:\\Github\\PRN_Project\\ProjectPRN\\StudentManager\\PresentationLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lenovo\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
