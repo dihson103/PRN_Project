@@ -28,56 +28,103 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnProfile = new System.Windows.Forms.Button();
-            this.btnGrade = new System.Windows.Forms.Button();
-            this.btnSchedule = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.msHome = new System.Windows.Forms.ToolStripMenuItem();
+            this.scheduleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.viewGradeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.profileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.palStHome = new System.Windows.Forms.Panel();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // btnProfile
+            // menuStrip1
             // 
-            this.btnProfile.Location = new System.Drawing.Point(565, 160);
-            this.btnProfile.Name = "btnProfile";
-            this.btnProfile.Size = new System.Drawing.Size(161, 131);
-            this.btnProfile.TabIndex = 5;
-            this.btnProfile.Text = "Profile";
-            this.btnProfile.UseVisualStyleBackColor = true;
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.msHome,
+            this.scheduleToolStripMenuItem,
+            this.viewGradeToolStripMenuItem,
+            this.profileToolStripMenuItem,
+            this.logoutToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(1745, 42);
+            this.menuStrip1.TabIndex = 6;
+            this.menuStrip1.Text = "menuStrip1";
             // 
-            // btnGrade
+            // msHome
             // 
-            this.btnGrade.Location = new System.Drawing.Point(317, 160);
-            this.btnGrade.Name = "btnGrade";
-            this.btnGrade.Size = new System.Drawing.Size(161, 131);
-            this.btnGrade.TabIndex = 4;
-            this.btnGrade.Text = "View Grade";
-            this.btnGrade.UseVisualStyleBackColor = true;
+            this.msHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.msHome.Checked = true;
+            this.msHome.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.msHome.Name = "msHome";
+            this.msHome.Size = new System.Drawing.Size(99, 38);
+            this.msHome.Text = "Home";
+            this.msHome.Click += new System.EventHandler(this.homeToolStripMenuItem_Click);
             // 
-            // btnSchedule
+            // scheduleToolStripMenuItem
             // 
-            this.btnSchedule.Location = new System.Drawing.Point(75, 160);
-            this.btnSchedule.Name = "btnSchedule";
-            this.btnSchedule.Size = new System.Drawing.Size(161, 131);
-            this.btnSchedule.TabIndex = 3;
-            this.btnSchedule.Text = "Schedule";
-            this.btnSchedule.UseVisualStyleBackColor = true;
+            this.scheduleToolStripMenuItem.BackColor = System.Drawing.SystemColors.Control;
+            this.scheduleToolStripMenuItem.Name = "scheduleToolStripMenuItem";
+            this.scheduleToolStripMenuItem.Size = new System.Drawing.Size(132, 38);
+            this.scheduleToolStripMenuItem.Text = "Schedule";
+            this.scheduleToolStripMenuItem.Click += new System.EventHandler(this.scheduleToolStripMenuItem_Click);
+            // 
+            // viewGradeToolStripMenuItem
+            // 
+            this.viewGradeToolStripMenuItem.Name = "viewGradeToolStripMenuItem";
+            this.viewGradeToolStripMenuItem.Size = new System.Drawing.Size(153, 38);
+            this.viewGradeToolStripMenuItem.Text = "View grade";
+            this.viewGradeToolStripMenuItem.Click += new System.EventHandler(this.viewGradeToolStripMenuItem_Click);
+            // 
+            // profileToolStripMenuItem
+            // 
+            this.profileToolStripMenuItem.Name = "profileToolStripMenuItem";
+            this.profileToolStripMenuItem.Size = new System.Drawing.Size(102, 38);
+            this.profileToolStripMenuItem.Text = "Profile";
+            this.profileToolStripMenuItem.Click += new System.EventHandler(this.profileToolStripMenuItem_Click);
+            // 
+            // logoutToolStripMenuItem
+            // 
+            this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
+            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(109, 38);
+            this.logoutToolStripMenuItem.Text = "Logout";
+            // 
+            // palStHome
+            // 
+            this.palStHome.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.palStHome.Location = new System.Drawing.Point(0, 42);
+            this.palStHome.Name = "palStHome";
+            this.palStHome.Size = new System.Drawing.Size(1745, 1062);
+            this.palStHome.TabIndex = 7;
             // 
             // Student_Home
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnProfile);
-            this.Controls.Add(this.btnGrade);
-            this.Controls.Add(this.btnSchedule);
+            this.ClientSize = new System.Drawing.Size(1745, 1104);
+            this.Controls.Add(this.palStHome);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "Student_Home";
-            this.Text = "Student_Home";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Student Management";
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-
-        private Button btnProfile;
-        private Button btnGrade;
-        private Button btnSchedule;
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem msHome;
+        private ToolStripMenuItem scheduleToolStripMenuItem;
+        private ToolStripMenuItem viewGradeToolStripMenuItem;
+        private ToolStripMenuItem profileToolStripMenuItem;
+        private ToolStripMenuItem logoutToolStripMenuItem;
+        private Panel palStHome;
     }
 }
