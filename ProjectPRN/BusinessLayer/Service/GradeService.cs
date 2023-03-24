@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DataAcessLayer.Dao;
+using DataAcessLayer.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,7 +10,11 @@ namespace BusinessLayer.Service
 {
     public class GradeService
     {
-        private GradeService() { }
+        private GradeDao dao;
+        private GradeService()
+        {
+            dao = new GradeDao();
+        }
 
         private static GradeService instance = null;
 
@@ -23,5 +29,8 @@ namespace BusinessLayer.Service
                 return instance;
             }
         }
+
+        public List<Grade> GetGrades(String stCode)
+            => dao.GetGrades(stCode);
     }
 }

@@ -1,5 +1,6 @@
 using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.Configuration;
+using PresentationLayer;
 using System.Data.Common;
 
 namespace StudentManager
@@ -8,7 +9,7 @@ namespace StudentManager
     {
         public static void Main(string[] args)
         {
-            Application.Run(new Schedule());
+            Application.Run(new Login());
         }
     }
 }
