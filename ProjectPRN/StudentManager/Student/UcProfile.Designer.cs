@@ -209,6 +209,7 @@
             this.Controls.Add(this.label1);
             this.Name = "UcProfile";
             this.Size = new System.Drawing.Size(1429, 833);
+            this.Load += new System.EventHandler(this.UcProfile_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -49,7 +49,7 @@
             this.logoutToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1745, 42);
+            this.menuStrip1.Size = new System.Drawing.Size(1745, 40);
             this.menuStrip1.TabIndex = 6;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -59,7 +59,7 @@
             this.msHome.Checked = true;
             this.msHome.CheckState = System.Windows.Forms.CheckState.Checked;
             this.msHome.Name = "msHome";
-            this.msHome.Size = new System.Drawing.Size(99, 38);
+            this.msHome.Size = new System.Drawing.Size(99, 36);
             this.msHome.Text = "Home";
             this.msHome.Click += new System.EventHandler(this.homeToolStripMenuItem_Click);
             // 
@@ -67,37 +67,38 @@
             // 
             this.scheduleToolStripMenuItem.BackColor = System.Drawing.SystemColors.Control;
             this.scheduleToolStripMenuItem.Name = "scheduleToolStripMenuItem";
-            this.scheduleToolStripMenuItem.Size = new System.Drawing.Size(132, 38);
+            this.scheduleToolStripMenuItem.Size = new System.Drawing.Size(132, 36);
             this.scheduleToolStripMenuItem.Text = "Schedule";
             this.scheduleToolStripMenuItem.Click += new System.EventHandler(this.scheduleToolStripMenuItem_Click);
             // 
             // viewGradeToolStripMenuItem
             // 
             this.viewGradeToolStripMenuItem.Name = "viewGradeToolStripMenuItem";
-            this.viewGradeToolStripMenuItem.Size = new System.Drawing.Size(153, 38);
+            this.viewGradeToolStripMenuItem.Size = new System.Drawing.Size(153, 36);
             this.viewGradeToolStripMenuItem.Text = "View grade";
             this.viewGradeToolStripMenuItem.Click += new System.EventHandler(this.viewGradeToolStripMenuItem_Click);
             // 
             // profileToolStripMenuItem
             // 
             this.profileToolStripMenuItem.Name = "profileToolStripMenuItem";
-            this.profileToolStripMenuItem.Size = new System.Drawing.Size(102, 38);
+            this.profileToolStripMenuItem.Size = new System.Drawing.Size(102, 36);
             this.profileToolStripMenuItem.Text = "Profile";
             this.profileToolStripMenuItem.Click += new System.EventHandler(this.profileToolStripMenuItem_Click);
             // 
             // logoutToolStripMenuItem
             // 
             this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
-            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(109, 38);
+            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(109, 36);
             this.logoutToolStripMenuItem.Text = "Logout";
+            this.logoutToolStripMenuItem.Click += new System.EventHandler(this.logoutToolStripMenuItem_Click);
             // 
             // palStHome
             // 
-            this.palStHome.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.palStHome.Location = new System.Drawing.Point(0, 42);
+            this.palStHome.Location = new System.Drawing.Point(42, 59);
             this.palStHome.Name = "palStHome";
-            this.palStHome.Size = new System.Drawing.Size(1745, 1062);
+            this.palStHome.Size = new System.Drawing.Size(1662, 1008);
             this.palStHome.TabIndex = 7;
+            this.palStHome.Paint += new System.Windows.Forms.PaintEventHandler(this.palStHome_Paint);
             // 
             // Student_Home
             // 
@@ -111,6 +112,7 @@
             this.Name = "Student_Home";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Student Management";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Student_Home_FormClosed);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

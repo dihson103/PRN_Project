@@ -13,6 +13,9 @@ namespace DataAcessLayer.Dao
 
         public List<Grade> GetGrades(String stCode)
             => MyStock.Instance.Grades.Where(x => x.IdStudent== stCode).ToList();
-        
+
+        public List<Grade> GetGradesByClass(String classCode)
+            => MyStock.Instance.Grades.Where(x => x.IdClass == classCode).ToList();
+
     }
 }

@@ -32,5 +32,8 @@ namespace BusinessLayer.Service
 
         public List<Grade> GetGrades(String stCode)
             => dao.GetGrades(stCode);
+
+        public List<Grade> GetGradesByClass(String idClass)
+            => dao.GetGradesByClass(idClass);
     }
 }

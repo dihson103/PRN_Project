@@ -1,4 +1,5 @@
-﻿using PresentationLayer.Student;
+﻿using PresentationLayer;
+using PresentationLayer.Student;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -50,15 +51,15 @@ namespace StudentManager
 
         private void scheduleToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if(!palStHome.Controls.Contains(UcStudentSchedule.Instance))
+            if (!palStHome.Controls.Contains(UcScheduleStudent.Instance))
             {
-                palStHome.Controls.Add(UcStudentSchedule.Instance);
-                UcStudentSchedule.Instance.Dock = DockStyle.Fill;
-                UcStudentSchedule.Instance.BringToFront();
+                palStHome.Controls.Add(UcScheduleStudent.Instance);
+                UcScheduleStudent.Instance.Dock = DockStyle.Fill;
+                UcScheduleStudent.Instance.BringToFront();
             }
             else
             {
-                UcStudentSchedule.Instance.BringToFront();
+                UcScheduleStudent.Instance.BringToFront();
             }
         }
 
@@ -88,6 +89,27 @@ namespace StudentManager
             {
                 UcProfile.Instance.BringToFront();
             }
+        }
+
+        private void palStHome_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            palStHome.Controls.Add(UcStudentHome.Instance);
+            UcStudentHome.Instance.Dock = DockStyle.Fill;
+            UcStudentHome.Instance.BringToFront();
+            Login.Instance.Show();
+            UcProfile.setInstanceNull();
+        }
+
+        private void Student_Home_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Login.Instance.Close();
+            
         }
     }
 }

@@ -34,13 +34,11 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.txtCode = new System.Windows.Forms.TextBox();
             this.txtNameTeacher = new System.Windows.Forms.TextBox();
             this.txtMark1 = new System.Windows.Forms.TextBox();
             this.txtMark2 = new System.Windows.Forms.TextBox();
             this.txtMark3 = new System.Windows.Forms.TextBox();
-            this.txtTotal = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.txtSearch = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvData)).BeginInit();
@@ -71,9 +69,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(864, 307);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(193, 32);
+            this.label2.Size = new System.Drawing.Size(195, 32);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Name of teacher";
+            this.label2.Text = "Name of student";
             // 
             // label3
             // 
@@ -102,15 +100,6 @@
             this.label5.Size = new System.Drawing.Size(88, 32);
             this.label5.TabIndex = 5;
             this.label5.Text = "Mark 3";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(864, 645);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(65, 32);
-            this.label6.TabIndex = 6;
-            this.label6.Text = "Total";
             // 
             // txtCode
             // 
@@ -147,13 +136,6 @@
             this.txtMark3.Size = new System.Drawing.Size(333, 39);
             this.txtMark3.TabIndex = 11;
             // 
-            // txtTotal
-            // 
-            this.txtTotal.Location = new System.Drawing.Point(1063, 638);
-            this.txtTotal.Name = "txtTotal";
-            this.txtTotal.Size = new System.Drawing.Size(333, 39);
-            this.txtTotal.TabIndex = 12;
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -169,6 +151,7 @@
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(424, 39);
             this.txtSearch.TabIndex = 14;
+            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
             // UcStudentGrade
             // 
@@ -176,13 +159,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.txtTotal);
             this.Controls.Add(this.txtMark3);
             this.Controls.Add(this.txtMark2);
             this.Controls.Add(this.txtMark1);
             this.Controls.Add(this.txtNameTeacher);
             this.Controls.Add(this.txtCode);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -205,13 +186,11 @@
         private Label label3;
         private Label label4;
         private Label label5;
-        private Label label6;
         private TextBox txtCode;
         private TextBox txtNameTeacher;
         private TextBox txtMark1;
         private TextBox txtMark2;
         private TextBox txtMark3;
-        private TextBox txtTotal;
         private Label label7;
         private TextBox txtSearch;
     }

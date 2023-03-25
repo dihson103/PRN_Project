@@ -84,3 +84,10 @@ D:\Github\PRN_Project\ProjectPRN\StudentManager\obj\Debug\net6.0-windows\Present
 D:\Github\PRN_Project\ProjectPRN\StudentManager\obj\Debug\net6.0-windows\PresentationLayer.Student.UcStudentSchedule.resources
 D:\Github\PRN_Project\ProjectPRN\StudentManager\obj\Debug\net6.0-windows\PresentationLayer.Student.UcStudentGrade.resources
 D:\Github\PRN_Project\ProjectPRN\StudentManager\obj\Debug\net6.0-windows\PresentationLayer.Student.UcProfile.resources
+D:\Github\PRN_Project\ProjectPRN\StudentManager\obj\Debug\net6.0-windows\PresentationLayer.Teacher.UcTeacherHome.resources
+D:\Github\PRN_Project\ProjectPRN\StudentManager\obj\Debug\net6.0-windows\PresentationLayer.Teacher.TeacherUpdateGrade.resources
+D:\Github\PRN_Project\ProjectPRN\StudentManager\obj\Debug\net6.0-windows\PresentationLayer.Teacher.UcTeacherManageClass.resources
+D:\Github\PRN_Project\ProjectPRN\StudentManager\obj\Debug\net6.0-windows\PresentationLayer.Teacher.UcTeacherSchedule.resources
+D:\Github\PRN_Project\ProjectPRN\StudentManager\obj\Debug\net6.0-windows\PresentationLayer.Student.UcScheduleStudent.resources
+D:\Github\PRN_Project\ProjectPRN\StudentManager\obj\Debug\net6.0-windows\PresentationLayer.Student.ScheduleDetail.resources
+D:\Github\PRN_Project\ProjectPRN\StudentManager\obj\Debug\net6.0-windows\PresentationLayer.Teacher.UcTakeAttend.resources
