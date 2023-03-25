@@ -35,5 +35,19 @@ namespace BusinessLayer.Service
             Account a = Ultil.AccountLg;
             return scheduleDao.GetSchedules(from, to, a);
         }
+
+        public List<Schedule> GetSchedulesByTeacher(DateTime from, DateTime to, List<Class> classes)
+        {
+            List<Schedule> schedules = new List<Schedule>();
+            foreach (Class cls in classes)
+            {
+                List<Schedule> ls = scheduleDao.GetSchedulesByIdClass(from, to, cls.Id);
+                foreach(Schedule s in ls)
+                {
+                    schedules.Add(s);
+                }
+            }
+            return schedules;
+        }
     }
 }

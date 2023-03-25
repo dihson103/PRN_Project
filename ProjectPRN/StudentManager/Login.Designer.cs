@@ -62,7 +62,7 @@
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(460, 39);
             this.txtEmail.TabIndex = 2;
-            this.txtEmail.Text = "dinhson1@123.com";
+            this.txtEmail.Text = "dinhson7@123.com";
             // 
             // txtPassword
             // 

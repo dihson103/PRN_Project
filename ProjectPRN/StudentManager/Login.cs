@@ -16,7 +16,19 @@ namespace PresentationLayer
 {
     public partial class Login : Form
     {
-        public Login()
+        private static Login instance = null;
+        public static Login Instance
+        {
+            get
+            {
+                if(instance == null)
+                {
+                    instance = new Login();
+                }
+                return instance;
+            }
+        }
+        private Login()
         {
             InitializeComponent();
         }
@@ -32,13 +44,13 @@ namespace PresentationLayer
                     new Admin_Home().Show();
                 }else if (a.Id.Contains("TC"))
                 {
-                    new Teacher_Home().Show();
+                    Teacher_Home.Instance.Show();
                 }
                 else
                 {
                     Student_Home.Instance.Show();
                 }
-                
+                this.Hide();
             }
             else
             {

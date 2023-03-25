@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DataAcessLayer.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,5 +9,10 @@ namespace DataAcessLayer.Dao
 {
     public class ClassDao
     {
+        public ClassDao() { }
+        public List<Class> GetClassesByAccount(Account a)
+            => MyStock.Instance.Classes.Where(x => x.IdTeacher == a.Id).ToList();
+
+
     }
 }

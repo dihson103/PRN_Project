@@ -28,13 +28,30 @@ namespace PresentationLayer.Student
                 return instance;
             }
         }
+
+        public static void setInstanceNull()
+        {
+            instance = null;
+        }
         private UcProfile()
         {
             InitializeComponent();
+            LoadDB();
+        }
+
+        private void LoadDB()
+        {
             Account a = Ultil.AccountLg;
             txtCode.Text = a.Id.ToString();
             txtEmail.Text = a.Email.ToString();
-            rbtnMale.Checked = a.Sex;
+            if (a.Sex)
+            {
+                rbtnMale.Checked = true;
+            }
+            else
+            {
+                rbtnFemale.Checked = true;
+            }
             txtPass.Text = a.Password;
             txtName.Text = a.Name.ToString();
             txtAddress.Text = a.Address;
@@ -62,6 +79,11 @@ namespace PresentationLayer.Student
                 Sex = rbtnMale.Checked
             };
             AccountService.Instance.UpdateAccount(g);
+        }
+
+        private void UcProfile_Load(object sender, EventArgs e)
+        {
+            LoadDB();
         }
     }
 }

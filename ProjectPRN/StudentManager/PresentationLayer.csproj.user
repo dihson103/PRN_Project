@@ -37,7 +37,13 @@
     <Compile Update="StudentManager.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Student\ScheduleDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Student\UcProfile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Student\UcScheduleStudent.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="Student\UcStudentGrade.cs">
@@ -51,6 +57,21 @@
     </Compile>
     <Compile Update="Teacher-Home.cs">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Teacher\TeacherUpdateGrade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Teacher\UcTeacherHome.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Teacher\UcTeacherManageClass.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Teacher\UcTeacherSchedule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Teacher\UcTakeAttend.cs">
+      <SubType>UserControl</SubType>
     </Compile>
   </ItemGroup>
 </Project>

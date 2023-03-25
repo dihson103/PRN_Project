@@ -49,10 +49,13 @@ namespace PresentationLayer.Student
             txtMark2.DataBindings.Clear();
             txtMark3.DataBindings.Clear();
 
-            txtCode.DataBindings.Add("Text", source, "IdStudent");
+            txtCode.DataBindings.Add("Text", source, "IdClass");
             txtMark1.DataBindings.Add("Text", source, "Mark1");
             txtMark2.DataBindings.Add("Text", source, "Mark2");
             txtMark3.DataBindings.Add("Text", source, "Mark3");
+            txtNameTeacher.Text = Ultil.AccountLg.Name;
+
+            
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -62,6 +65,26 @@ namespace PresentationLayer.Student
 
         private void dgvData_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+
+        }
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            source = new BindingSource();
+            Account a = Ultil.AccountLg;
+            source.DataSource = MyStock.Instance.Grades.Where(x => x.IdClass.Contains(txtSearch.Text) && x.IdStudent == Ultil.AccountLg.Id).ToList();
+            dgvData.DataSource = source;
+
+            txtCode.DataBindings.Clear();
+            txtMark1.DataBindings.Clear();
+            txtMark2.DataBindings.Clear();
+            txtMark3.DataBindings.Clear();
+
+            txtCode.DataBindings.Add("Text", source, "IdClass");
+            txtMark1.DataBindings.Add("Text", source, "Mark1");
+            txtMark2.DataBindings.Add("Text", source, "Mark2");
+            txtMark3.DataBindings.Add("Text", source, "Mark3");
+            txtNameTeacher.Text = Ultil.AccountLg.Name;
 
         }
     }
